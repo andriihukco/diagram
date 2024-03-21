@@ -5,23 +5,24 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HSYVHF9GK6"></script>
     <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-HSYVHF9GK6');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-HSYVHF9GK6');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diagram | Product Design Services</title>
     <link rel="icon" type="image/x-icon" href="fav.png">
     <!-- Include Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
-
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
     <style>
         :root {
-            --ti-cursor-color: rgba(255,165,0,.25);
+            --ti-cursor-color: rgba(255, 165, 0, .25);
         }
     </style>
 
@@ -30,36 +31,46 @@
 <body class="min-h-screen bg-white">
     <!-- Header -->
     <header class="bg-white shadow-sm">
+        <!-- Include header component -->
         <div class="flex flex-col md:flex-row gap-4 px-4 py-2 md:justify-between md:items-center">
-            <!-- Logo -->
-            <div class="mt-4 md:mt-0 flex items-center gap-2">
-                <svg width="32" height="32" viewBox="0 0 40 40" fill="black" xmlns="http://www.w3.org/2000/svg" class="fill-slate-500 bg-gradient-to-b from-slate-50 to-slate-200 rounded-full">
-                    <path d="M19.8337 35C18.4337 35 17.2503 34.5167 16.2837 33.55C15.317 32.5833 14.8337 31.4 14.8337 30C14.8337 28.8444 15.1781 27.8278 15.867 26.95C16.5559 26.0722 17.4337 25.4778 18.5003 25.1667V22.3333H10.5003V17H7.16699V7.66667H16.5003V17H13.167V19.6667H26.5003V16.8333C25.4337 16.5222 24.5559 15.9278 23.867 15.05C23.1781 14.1722 22.8337 13.1556 22.8337 12C22.8337 10.6 23.317 9.41667 24.2837 8.45C25.2503 7.48333 26.4337 7 27.8337 7C29.2337 7 30.417 7.48333 31.3837 8.45C32.3503 9.41667 32.8337 10.6 32.8337 12C32.8337 13.1556 32.4892 14.1722 31.8003 15.05C31.1114 15.9278 30.2337 16.5222 29.167 16.8333V22.3333H21.167V25.1667C22.2337 25.4778 23.1114 26.0722 23.8003 26.95C24.4892 27.8278 24.8337 28.8444 24.8337 30C24.8337 31.4 24.3503 32.5833 23.3837 33.55C22.417 34.5167 21.2337 35 19.8337 35Z"/>
+            <div class="flex">
+                <!-- Logo -->
+                <div class="mt-4 md:mt-0 flex items-center gap-2">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="24" fill="#F7F9FB" />
+                        <path d="M24 16L16 30H32L24 16Z" stroke="#0F172A" stroke-width="2" stroke-linejoin="round" />
+                        <rect x="18" y="9" width="12" height="10" fill="#FCB974" stroke="#0F172A" stroke-width="2" />
+                        <rect x="27" y="25" width="12" height="10" fill="#FCB974" stroke="#0F172A" stroke-width="2" />
+                        <rect x="9" y="25" width="12" height="10" fill="#FCB974" stroke="#0F172A" stroke-width="2" />
                     </svg>
-                </svg>                                              
-                <p class="text-lg text-gray-800 font-bold">Diagram</p>
+                    <p class="text-lg text-gray-800 font-semibold">Diagram</p>
+                    <nav class="flex ml-4">
+                        <ul>
+                            <li class="flex text-slate-500 cursor-not-allowed">Cases <span class=" text-black text-xs ml-2 bg-orange-50 p-1">Coming Soon</span></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
             <!-- Email -->
-            <p class="grow md:text-right mb-4 md:mb-0"><a href="mailto:a.huk@diagram.services" class="duration-500 rounded-sm text-gray-600 hover:text-gray-800 underline underline-offset-4 decoration-slate-300 hover:decoration-blue-500 focus:outline-none focus:ring-offset-4 focus:ring-2 focus:ring-blue-400">a.huk@diagram.services</a> — Andrii Huk @ Founder</p>
-            <button onclick="openLink('https://bit.ly/Diagram-Celendly-30-Minute-Meeting')" class="duration-500 bg-slate-50 hover:bg-white hover:border-slate-300 border shadow-sm rounded-md px-4 py-2 focus:outline-none focus:ring-offset-4 focus:ring-2 focus:ring-blue-400">Book Call</button>
+            <p class="grow md:text-right mb-4 md:mb-0"><a href="mailto:a.huk@diagram.services" class="duration-500 text-gray-600 hover:text-gray-800 underline underline-offset-4 decoration-slate-300 hover:decoration-blue-500 focus:outline-none focus:ring-offset-4 focus:ring-2 focus:ring-blue-400">a.huk@diagram.services</a> — Andrii Huk @ Founder</p>
+            <button onclick="openLink('https://bit.ly/Diagram-Celendly-30-Minute-Meeting')" class="duration-500 bg-slate-50 hover:bg-white hover:border-slate-300 border font-semibold shadow-sm px-4 py-2 focus:outline-none focus:ring-offset-4 focus:ring-2 focus:ring-blue-400">Book Call</button>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="px-5 pt-20 md:pt-10">
+        <!-- Include hero component -->
         <div class="mx-auto grid justify-items-center">
             <div class="flex text-5xl md:text-7xl flex-col gap-1 max-w-2xl items-center h-56 md:h-96">
                 <h1 class="text-center mb-2">Fueling business growth through</h1>
                 <h1 class="flex">
-                    <span id="type-effect" class="text-center bg-gradient-to-r from-slate-200 to-slate-100 rounded-lg px-4 pb-3 overflow-hidden"></span>
+                    <span id="type-effect" class="bg-gradient-to-r from-slate-200 to-slate-100 px-4 pb-3 overflow-hidden"></span>
                 </h1>
             </div>
             <!-- Form -->
-            <form id="emailForm" class="flex flex-col bg-orange-50 border border-orange-200 mt-6 rounded-xl p-2 w-full md:w-1/2 lg:w-1/3 shadow shadow-orange-50 hover:shadow-xl hover:shadow-orange-100 hover:-translate-y-1 duration-500">
-                <button type="button" onclick="openLink('https://bit.ly/Diagram-Client-Brief')"
-                    class="duration-500 relative text-md rounded-md text-white bg-gray-900 p-4 hover:bg-gray-700 focus:outline-none focus:ring-offset-4 focus:ring-2 focus:ring-blue-400">Fill a Brief <span class="text-gray-400">(15 minutes)</span>
-                </button>
-                <p class="text-sm mt-2 text-gray-500 text-center"><span class="text-lg">🎁</span> Get <span><a href="https://en.wikipedia.org/wiki/Business_Model_Canvas" target=”_blank” class="duration-500 text-gray-600 hover:text-gray-800 underline underline-offset-4 decoration-slate-300 hover:decoration-blue-500 rounded-sm focus:outline-none focus:ring-offset-4 focus:ring-2 focus:ring-blue-400">Business Canvas </a></span>in 72 hours, for free</p>
+            <form id="emailForm" class="flex flex-col bg-orange-50 border border-orange-200 mt-6 p-2 w-full md:w-1/2 lg:w-1/3 shadow shadow-orange-50 hover:shadow-xl hover:shadow-orange-100 hover:-translate-y-1 duration-500">
+                <button type="button" onclick="openLink('https://bit.ly/Diagram-Client-Brief')" class="duration-500 relative font-semibold text-md text-white bg-gray-900 p-4 hover:bg-gray-700 focus:outline-none focus:ring-offset-4 focus:ring-2 focus:ring-blue-400">Fill a Brief <span class="text-gray-400">(15 minutes)</span></button>
+                <p class="text-sm mt-2 text-gray-500 text-center"><span class="text-lg">🎁</span> Get <span><a href="https://en.wikipedia.org/wiki/Business_Model_Canvas" target=”_blank” class="duration-500 text-gray-600 hover:text-gray-800 underline underline-offset-4 decoration-slate-300 hover:decoration-blue-500 focus:outline-none focus:ring-offset-4 focus:ring-2 focus:ring-blue-400 font-medium">Business Canvas </a></span>in 72 hours, for free</p>
             </form>
         </div>
     </section>
@@ -70,41 +81,23 @@
         </div>
     </footer>
 
-</body>
-
+    <!-- Include external JavaScript -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <script>
         function openLink(url) {
             window.open(url, '_blank');
         }
 
-        new TypeIt("#type-effect", {speed: 150, startDelay: 900, loop: true, cursorChar: ""})
-        .type('design thinking')
-        .pause(2000)
-        .delete()
-        .type('user research')
-        .pause(2000)
-        .delete()
-        .type('hypothesis')
-        .pause(2000).delete()
-        .type('personas')
-        .pause(2000)
-        .delete()
-        .type('competitor analysis')
-        .pause(2000)
-        .delete()
-        .type('idea generation')
-        .pause(2000)
-        .delete()
-        .type('prototyping')
-        .pause(2000)
-        .delete()
-        .pause(2000)
-        .type('user journeys')
-        .pause(2000)
-        .delete()
-        .pause(2000)
+        // Move this script to an external file and include it at the bottom of the body
+        new TypeIt("#type-effect", {
+            speed: 150,
+            startDelay: 900,
+            loop: true,
+            cursorChar: ""
+        })
+        // Add your typing effect
         .go();
-   
     </script>
+</body>
 
 </html>
