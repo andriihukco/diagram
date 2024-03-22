@@ -131,13 +131,13 @@
     <!-- Hero Section -->
     <section class="px-5">
         <div class="mx-auto grid justify-items-center">
-            <div class="flex text-5xl md:text-7xl flex-col gap-4 max-w-2xl items-center  py-12 md:py-16">
+            <div class="flex text-5xl md:text-7xl flex-col max-w-2xl items-center py-12 md:py-16">
                 <h1 class="text-center">Fueling business growth through</h1>
-                <h1 class="flex text-white">
-                    <span id="type-effect" class="bg-gradient-to-r from-orange-400 to-orange-500 px-4 py-4 overflow-hidden text-center"></span>
+                <h1 id="type-effect-box" class="flex text-white">
+                    <span id="type-effect" class="bg-gradient-to-r from-orange-400 to-orange-500 text-center"></span>
                 </h1>
                 
-                <button id="animationControl" class="flex items-center text-orange-500 cursor-pointer focus:outline-none" onclick="toggleAnimation()">
+                <button id="animationControl" class="flex mt-4 items-center text-orange-500 cursor-pointer focus:outline-none" onclick="toggleAnimation()">
                     <i id="animationControlIcon" class="material-icons ">stop</i>
                     <p id="animationControlText" class="flex items-center duration-500 text-base hover:text-gray-800 underline underline-offset-4 decoration-slate-300 hover:decoration-orange-500 ">Stop Animation</p>
                 </button>
@@ -185,6 +185,18 @@ function toggleAnimation() {
     }
     isAnimationPaused = !isAnimationPaused;
 }
+
+// JavaScript to add rotating effect
+const element = document.getElementById('type-effect-box');
+
+// Function to rotate the element
+function rotateElement() {
+  element.style.transform = 'rotate(-1deg)';
+}
+
+// Initially rotate the element when the page loads
+rotateElement();
+
 
 document.addEventListener('DOMContentLoaded', function () {
     typeItInstance = new TypeIt("#type-effect", { speed: 150, startDelay: 900, loop: true, cursorChar: "" })
